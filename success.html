@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success! | LogicCore</title>
+    <link rel="icon" type="image/x-icon" href="Assets/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="global.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slate: {
+                            900: '#0f172a',
+                            800: '#1e293b',
+                        },
+                        emerald: {
+                            400: '#34d399',
+                            500: '#10b981',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-900 text-white antialiased flex flex-col min-h-screen items-center justify-center">
+    <main class="text-center p-8 max-w-2xl mx-auto">
+        <svg class="w-24 h-24 mx-auto text-emerald-400 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        <h1 class="text-4xl font-extrabold text-white mb-4">Transmission Received!</h1>
+        <p class="text-xl text-slate-400 mb-8">
+            Thank you for contacting LogicCore. We've received your message and will be in touch shortly.
+        </p>
+        <a href="index.html" class="px-8 py-3 border border-transparent text-base font-medium rounded-md text-slate-900 bg-emerald-400 hover:bg-emerald-500 md:py-4 md:text-lg transition-all shadow-[0_0_15px_rgba(52,211,153,0.3)] hover:shadow-[0_0_25px_rgba(52,211,153,0.5)]">
+            Return to Home
+        </a>
+    </main>
+</body>
+</html>

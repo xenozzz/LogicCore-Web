@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LogicCore MSP Partner Program: You handle the IT, we handle the pixels & security.">
+    <title>MSP Partners | LogicCore</title>
+    <link rel="icon" type="image/x-icon" href="Assets/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="global.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slate: {
+                            900: '#0f172a',
+                            800: '#1e293b',
+                        },
+                        emerald: {
+                            400: '#34d399',
+                            500: '#10b981',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-900 text-white antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="border-b border-slate-800 bg-slate-900/90 backdrop-blur fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold font-mono text-emerald-400 tracking-tighter">&lt;LogicCore /&gt;</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="text-slate-300 hover:text-emerald-400 hover:bg-slate-800 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="msp-partners.html" class="bg-slate-800 text-white px-3 py-2 rounded-md text-sm font-medium border border-slate-700" aria-current="page">MSP Partners</a>
+                        <a href="services.html" class="text-slate-300 hover:text-emerald-400 hover:bg-slate-800 px-3 py-2 rounded-md text-sm font-medium transition-colors">Services & Pricing</a>
+                        <a href="contact.html" class="text-slate-300 hover:text-emerald-400 hover:bg-slate-800 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <a href="contact.html" class="text-emerald-400 font-mono text-sm border border-emerald-400 px-3 py-1 rounded">Let's Talk</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <main class="flex-grow pt-16">
+        <section class="bg-slate-900 pt-20 pb-16 lg:pt-32 lg:pb-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-6 font-mono text-white">
+                    Your Clients Need Websites.<br class="hidden sm:block" />
+                    <span class="text-emerald-400">You Need Peace of Mind.</span>
+                </h1>
+                <p class="mt-4 max-w-2xl mx-auto text-xl text-slate-400">
+                    We speak DNS, SPF, and DKIM. We don't break mail flow.
+                </p>
+            </div>
+        </section>
+
+        <!-- Pain Points -->
+        <section class="bg-slate-800 py-16 border-y border-slate-700">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-2xl font-bold text-white mb-6">Tired of designers breaking DNS?</h2>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-red-400 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <p class="text-slate-300">Design agencies that wipe out MX records during "launch".</p>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-red-400 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <p class="text-slate-300">Wordpress sites getting hacked and blacklisting your client's domain IP.</p>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-red-400 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <p class="text-slate-300">Endless calls about "slow websites" that you have to troubleshoot.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-900 p-8 rounded-lg border border-slate-700">
+                        <h3 class="text-xl font-bold text-emerald-400 mb-4 font-mono">The LogicCore Promise</h3>
+                        <p class="text-slate-300 mb-4">
+                            We are former sysadmins. We understand the importance of uptime, security, and correct DNS configuration.
+                        </p>
+                        <p class="text-slate-300">
+                            When we launch a site, we check SPF, we verify DKIM, and we ensure DMARC compliance isn't compromised.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Offer -->
+        <section class="py-20">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="bg-gradient-to-br from-slate-800 to-slate-900 p-10 rounded-2xl border border-slate-700 shadow-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl -mr-16 -mt-16"></div>
+                    
+                    <h2 class="text-3xl font-bold text-white mb-4">Referral Partner Program</h2>
+                    <p class="text-xl text-emerald-400 mb-8 font-mono">You handle the IT, we handle the pixels & security.</p>
+                    
+                    <div class="text-left max-w-lg mx-auto space-y-4 mb-10">
+                        <div class="flex items-center">
+                            <svg class="h-5 w-5 text-emerald-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-slate-300">Recurring revenue share on maintenance plans.</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="h-5 w-5 text-emerald-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-slate-300">White-label options available.</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="h-5 w-5 text-emerald-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-slate-300">Zero headache hand-offs.</span>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="inline-block px-8 py-4 bg-emerald-400 text-slate-900 font-bold rounded-lg hover:bg-emerald-500 transition-all shadow-[0_0_15px_rgba(52,211,153,0.3)]">
+                        Book a Partner Sync
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800 pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-2">
+                    <span class="text-xl font-bold font-mono text-emerald-400">&lt;LogicCore /&gt;</span>
+                    <p class="mt-4 text-slate-400 max-w-xs">
+                        Websites that work as hard as your network security. Proudly serving Wales and the UK.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold text-white uppercase tracking-wider">Company</h4>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="index.html" class="text-slate-400 hover:text-emerald-400 transition-colors">Home</a></li>
+                        <li><a href="services.html" class="text-slate-400 hover:text-emerald-400 transition-colors">Services</a></li>
+                        <li><a href="msp-partners.html" class="text-slate-400 hover:text-emerald-400 transition-colors">MSP Partners</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold text-white uppercase tracking-wider">Connect</h4>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="contact.html" class="text-slate-400 hover:text-emerald-400 transition-colors">Contact Us</a></li>
+                        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-emerald-400 transition-colors">GitHub</a></li>
+                        <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-emerald-400 transition-colors">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-slate-500 text-sm">&copy; 2024 LogicCore. All rights reserved.</p>
+                <p class="text-slate-600 text-xs mt-2 md:mt-0 font-mono">Hosted in the UK. Secure by Default.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
