@@ -3,27 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact LogicCore. Based in Wales, Serving the UK.">
-    <title>Contact Us | LogicCore</title>
+    <meta name="description" content="Contact LogicCore, a secure web design agency based in Wales, serving SMBs and MSPs across the UK.">
+    <title>Contact LogicCore | Secure Web Agency in Wales</title>
+    <link rel="canonical" href="https://logiccore.cloud/contact.html" />
     <link rel="icon" type="image/x-icon" href="Assets/favicon.ico">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://logiccore.cloud/contact.html">
+    <meta property="og:title" content="Contact LogicCore | Secure Web Agency in Wales">
+    <meta property="og:description" content="Contact LogicCore, a secure web design agency based in Wales, serving SMBs and MSPs across the UK.">
+    <meta property="og:image" content="https://logiccore.cloud/Assets/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://logiccore.cloud/contact.html">
+    <meta property="twitter:title" content="Contact LogicCore | Secure Web Agency in Wales">
+    <meta property="twitter:description" content="Contact LogicCore, a secure web design agency based in Wales, serving SMBs and MSPs across the UK.">
+    <meta property="twitter:image" content="https://logiccore.cloud/Assets/logo.png">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="global.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        slate: {
-                            900: '#0f172a',
-                            800: '#1e293b',
-                        },
-                        emerald: {
-                            400: '#34d399',
-                            500: '#10b981',
-                        }
-                    }
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://logiccore.cloud/#organization",
+              "name": "LogicCore",
+              "url": "https://logiccore.cloud/",
+              "logo": "https://logiccore.cloud/Assets/logo.png",
+              "description": "LogicCore: Beautifully Designed. Brutally Secure. Web agency for SMBs and MSPs in Wales and the UK.",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+44-33-0001-2345",
+                "contactType": "customer service",
+                "email": "hello@logiccore.cloud"
+              },
+              "sameAs": [
+                "https://www.linkedin.com/company/logiccore",
+                "https://github.com/xenozzz/LogicCore-Web"
+              ]
+            },
+            {
+              "@type": "ProfessionalService",
+              "@id": "https://logiccore.cloud/#service",
+              "name": "Secure Web Design Agency",
+              "description": "Providing brutally secure and beautifully designed static websites for SMBs and MSPs.",
+              "provider": {
+                "@id": "https://logiccore.cloud/#organization"
+              },
+              "serviceType": [
+                "Web Design",
+                "Web Development",
+                "Cybersecurity Consulting",
+                "Managed Services Provider (MSP) Partnerships"
+              ],
+              "areaServed": [
+                {
+                  "@type": "Country",
+                  "name": "United Kingdom"
+                },
+                {
+                  "@type": "AdministrativeArea",
+                  "name": "Wales"
                 }
+              ]
             }
+          ]
         }
     </script>
 </head>
