@@ -1,0 +1,48 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://logiccore.cloud/#organization",
+      "name": "LogicCore",
+      "url": "https://logiccore.cloud/",
+      "logo": "https://logiccore.cloud/Assets/logo.png",
+      "description": "LogicCore: Beautifully Designed. Brutally Secure. Web agency for SMBs and MSPs in Wales and the UK.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+44-33-0001-2345",
+        "contactType": "customer service",
+        "email": "hello@logiccore.cloud"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/logiccore",
+        "https://github.com/xenozzz/LogicCore-Web"
+      ]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://logiccore.cloud/#service",
+      "name": "Secure Web Design Agency",
+      "description": "Providing brutally secure and beautifully designed static websites for SMBs and MSPs.",
+      "provider": {
+        "@id": "https://logiccore.cloud/#organization"
+      },
+      "serviceType": [
+        "Web Design",
+        "Web Development",
+        "Cybersecurity Consulting",
+        "Managed Services Provider (MSP) Partnerships"
+      ],
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "United Kingdom"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Wales"
+        }
+      ]
+    }
+  ]
+}
