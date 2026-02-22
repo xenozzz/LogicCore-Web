@@ -63,13 +63,19 @@ h6,
 }
 
 .brand-logo {
-    height: 1.4rem;
-    max-width: 138px;
+    height: 1.05rem;
+    max-width: 118px;
     width: auto;
     display: block;
+    object-fit: contain;
+    object-position: left center;
 }
 
 .nav-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 4.3rem;
     padding: 0.44rem 0.7rem;
     border-radius: 0.65rem;
     font-size: 0.74rem;
@@ -276,8 +282,8 @@ textarea:focus-visible {
 
 @media (min-width: 640px) {
     .brand-logo {
-        height: 1.65rem;
-        max-width: 170px;
+        height: 1.28rem;
+        max-width: 150px;
     }
 
     .nav-cta {
