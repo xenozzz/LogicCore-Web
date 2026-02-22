@@ -97,11 +97,15 @@
                     <div class="section-card p-8 lg:p-10" data-reveal>
                         <h2 class="text-2xl font-bold">Request a Quote</h2>
                         <p class="mt-2 text-slate-600 text-sm">No-pressure call with clear recommendations and next steps.</p>
+                        <p id="package-context" class="mt-2 text-sm font-semibold text-blue-700 hidden"></p>
 
                         <form action="https://api.web3forms.com/submit" method="POST" class="mt-7 space-y-5">
                             <input type="hidden" name="access_key" value="7bfa60a2-0809-48c5-bff9-03f92863a6a7">
                             <input type="hidden" name="subject" value="New Website Enquiry from LogicCore">
                             <input type="hidden" name="redirect" value="https://logiccore.cloud/success.html">
+                            <input type="hidden" name="selected_package" id="selected_package" value="">
+                            <input type="hidden" name="selected_package_label" id="selected_package_label" value="">
+                            <input type="hidden" name="lead_source" id="lead_source" value="">
                             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
                             <div>
@@ -197,6 +201,36 @@
             </div>
         </section>
     </main>
+
+    <script>
+        (function () {
+            const params = new URLSearchParams(window.location.search);
+            const rawPackage = (params.get("package") || "").toLowerCase();
+            const packageNames = {
+                "launch": "Launch",
+                "lead-builder": "Lead Builder",
+                "growth-pro": "Growth Pro",
+                "care-plan": "Care & Growth Plan"
+            };
+
+            const selectedPackage = packageNames[rawPackage] || "";
+            const source = selectedPackage ? "services-packages" : "direct-contact";
+
+            const packageInput = document.getElementById("selected_package");
+            const packageLabelInput = document.getElementById("selected_package_label");
+            const sourceInput = document.getElementById("lead_source");
+            const context = document.getElementById("package-context");
+
+            if (packageInput) packageInput.value = rawPackage;
+            if (packageLabelInput) packageLabelInput.value = selectedPackage;
+            if (sourceInput) sourceInput.value = source;
+
+            if (selectedPackage && context) {
+                context.textContent = "Selected package: " + selectedPackage;
+                context.classList.remove("hidden");
+            }
+        })();
+    </script>
 
     <footer class="footer-shell pt-12 pb-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
