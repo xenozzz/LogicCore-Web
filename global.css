@@ -62,6 +62,12 @@ h6,
     letter-spacing: -0.03em;
 }
 
+.brand-logo {
+    height: 2rem;
+    width: auto;
+    display: block;
+}
+
 .nav-link {
     color: var(--muted);
     transition: color 150ms ease, background-color 150ms ease;
