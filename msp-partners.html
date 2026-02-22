@@ -3,220 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="LogicCore MSP Partner Program: Web solutions that enhance your IT services. Handle the IT, we handle the pixels & security.">
-    <title>MSP Partner Program & Referral | LogicCore</title>
+    <meta name="description" content="LogicCore partner program for MSPs and IT consultants who need reliable web delivery for their local business clients.">
+    <title>MSP Partner Program | LogicCore</title>
     <link rel="canonical" href="https://logiccore.cloud/msp-partners.html" />
     <link rel="icon" type="image/x-icon" href="Assets/favicon.ico">
-    
-    <!-- Security Headers -->
+
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdn.tailwindcss.com https://fonts.googleapis.com https://fonts.gstatic.com; img-src 'self' data: https://logiccore.cloud; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta name="referrer" content="strict-origin-when-cross-origin">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://logiccore.cloud/msp-partners.html">
-    <meta property="og:title" content="MSP Partner Program & Referral | LogicCore">
-    <meta property="og:description" content="LogicCore MSP Partner Program: Web solutions that enhance your IT services. Handle the IT, we handle the pixels & security.">
-    <meta property="og:image" content="https://logiccore.cloud/Assets/logo.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://logiccore.cloud/msp-partners.html">
-    <meta property="twitter:title" content="MSP Partner Program & Referral | LogicCore">
-    <meta property="twitter:description" content="LogicCore MSP Partner Program: Web solutions that enhance your IT services. Handle the IT, we handle the pixels & security.">
-    <meta property="twitter:image" content="https://logiccore.cloud/Assets/logo.png">
-
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="global.css">
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@graph": [
-            {
-              "@type": "Organization",
-              "@id": "https://logiccore.cloud/#organization",
-              "name": "LogicCore",
-              "url": "https://logiccore.cloud/",
-              "logo": "https://logiccore.cloud/Assets/logo.png",
-              "description": "LogicCore: Beautifully Designed. Brutally Secure. Web agency for SMBs and MSPs in Wales and the UK.",
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+44-33-0001-2345",
-                "contactType": "customer service",
-                "email": "hello@logiccore.cloud"
-              },
-              "sameAs": [
-                "https://www.linkedin.com/company/logiccore",
-                "https://github.com/xenozzz/LogicCore-Web"
-              ]
-            },
-            {
-              "@type": "ProfessionalService",
-              "@id": "https://logiccore.cloud/#service",
-              "name": "Secure Web Design Agency",
-              "description": "Providing brutally secure and beautifully designed static websites for SMBs and MSPs.",
-              "provider": {
-                "@id": "https://logiccore.cloud/#organization"
-              },
-              "serviceType": [
-                "Web Design",
-                "Web Development",
-                "Cybersecurity Consulting",
-                "Managed Services Provider (MSP) Partnerships"
-              ],
-              "areaServed": [
-                {
-                  "@type": "Country",
-                  "name": "United Kingdom"
-                },
-                {
-                  "@type": "AdministrativeArea",
-                  "name": "Wales"
-                }
-              ]
-            }
-          ]
-        }
-    </script>
 </head>
-<body class="bg-slate-900 text-white antialiased flex flex-col min-h-screen">
-
-    <!-- Navigation -->
-    <nav class="border-b border-slate-800 bg-slate-900/90 backdrop-blur fixed w-full z-50">
+<body class="text-slate-900 antialiased flex flex-col min-h-screen">
+    <nav class="site-nav fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
-                <div class="flex items-center">
-                    <a href="index.html" class="text-2xl font-bold font-mono text-emerald-400 tracking-tighter">&lt;LogicCore /&gt;</a>
+                <a href="index.html" class="brand-mark text-2xl">LogicCore</a>
+                <div class="hidden md:flex items-center gap-2">
+                    <a href="index.html" class="nav-link px-3 py-2 rounded-md text-sm font-semibold">Home</a>
+                    <a href="services.html" class="nav-link px-3 py-2 rounded-md text-sm font-semibold">Packages</a>
+                    <a href="contact.html" class="nav-link px-3 py-2 rounded-md text-sm font-semibold">Contact</a>
+                    <a href="msp-partners.html" class="nav-link nav-link-current px-3 py-2 rounded-md text-sm font-semibold" aria-current="page">MSP Partners</a>
                 </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="index.html" class="text-slate-300 hover:text-emerald-400 hover:bg-slate-800 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
-                        <a href="msp-partners.html" class="bg-slate-800 text-white px-3 py-2 rounded-md text-sm font-medium border border-slate-700" aria-current="page">MSP Partners</a>
-                        <a href="services.html" class="text-slate-300 hover:text-emerald-400 hover:bg-slate-800 px-3 py-2 rounded-md text-sm font-medium transition-colors">Services & Pricing</a>
-                        <a href="contact.html" class="text-slate-300 hover:text-emerald-400 hover:bg-slate-800 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
-                    </div>
-                </div>
-                <div class="-mr-2 flex md:hidden">
-                    <a href="contact.html" class="text-emerald-400 font-mono text-sm border border-emerald-400 px-3 py-1 rounded">Let's Talk</a>
-                </div>
+                <a href="contact.html" class="cta-primary px-4 py-2 rounded-lg text-sm font-bold">Book a Call</a>
             </div>
         </div>
     </nav>
 
-    <!-- Header Section -->
     <main class="flex-grow pt-16">
-        <section class="bg-slate-900 pt-20 pb-16 lg:pt-32 lg:pb-24">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-6 font-mono text-white">
-                    Your Clients Need Websites.<br class="hidden sm:block" />
-                    <span class="text-emerald-400">You Need Peace of Mind.</span>
-                </h1>
-                <p class="mt-4 max-w-2xl mx-auto text-xl text-slate-400">
-                    We speak DNS, SPF, and DKIM. We don't break mail flow.
-                </p>
-            </div>
-        </section>
-
-        <!-- Pain Points -->
-        <section class="bg-slate-800 py-16 border-y border-slate-700">
+        <section class="pt-14 pb-16 lg:pt-20 lg:pb-24">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <h2 class="text-2xl font-bold text-white mb-6">Tired of designers breaking DNS?</h2>
-                        <ul class="space-y-4">
-                            <li class="flex items-start">
-                                <svg class="h-6 w-6 text-red-400 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                <p class="text-slate-300">Design agencies that wipe out MX records during "launch".</p>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="h-6 w-6 text-red-400 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                <p class="text-slate-300">Wordpress sites getting hacked and blacklisting your client's domain IP.</p>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="h-6 w-6 text-red-400 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                <p class="text-slate-300">Endless calls about "slow websites" that you have to troubleshoot.</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="bg-slate-900 p-8 rounded-lg border border-slate-700">
-                        <h3 class="text-xl font-bold text-emerald-400 mb-4 font-mono">The LogicCore Promise</h3>
-                        <p class="text-slate-300 mb-4">
-                            We are former sysadmins. We understand the importance of uptime, security, and correct DNS configuration.
-                        </p>
-                        <p class="text-slate-300">
-                            When we launch a site, we check SPF, we verify DKIM, and we ensure DMARC compliance isn't compromised.
-                        </p>
-                    </div>
+                <span class="badge">Partner Program</span>
+                <h1 class="mt-4 text-4xl sm:text-5xl font-extrabold leading-tight max-w-3xl">
+                    White-label web delivery for <span class="highlight">MSPs and IT consultants</span>.
+                </h1>
+                <p class="mt-6 text-lg text-slate-600 max-w-3xl">
+                    If your clients need a trusted website partner, LogicCore can design, build, and launch under your guidance while you stay focused on managed IT and support.
+                </p>
+
+                <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <article class="section-card p-6">
+                        <h2 class="font-display text-xl font-bold">Referral Model</h2>
+                        <p class="mt-3 text-slate-600">Introduce clients and we manage discovery, design, and delivery. You keep the relationship and receive a referral fee.</p>
+                    </article>
+                    <article class="section-card p-6">
+                        <h2 class="font-display text-xl font-bold">White-Label Model</h2>
+                        <p class="mt-3 text-slate-600">We act as your delivery arm with your process and brand touchpoints. Ideal for growing agencies and MSP teams.</p>
+                    </article>
+                    <article class="section-card p-6">
+                        <h2 class="font-display text-xl font-bold">Co-Delivery</h2>
+                        <p class="mt-3 text-slate-600">You own strategy and client comms; we provide production support, security-first implementation, and launch QA.</p>
+                    </article>
                 </div>
-            </div>
-        </section>
 
-        <!-- The Offer -->
-        <section class="py-20">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <div class="bg-gradient-to-br from-slate-800 to-slate-900 p-10 rounded-2xl border border-slate-700 shadow-2xl relative overflow-hidden">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl -mr-16 -mt-16"></div>
-                    
-                    <h2 class="text-3xl font-bold text-white mb-4">The MSP Partner Protocol</h2>
-                    <p class="text-xl text-emerald-400 mb-8 font-mono">The No-Blame Guarantee. We work with the IT department, not against them.</p>
-                    
-                    <div class="text-left max-w-lg mx-auto space-y-4 mb-10">
-                        <div class="flex items-center">
-                            <svg class="h-5 w-5 text-emerald-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <span class="text-slate-300">Pre-flight DNS check and post-launch security report.</span>
-                        </div>
-                        <div class="flex items-center">
-                            <svg class="h-5 w-5 text-emerald-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <span class="text-slate-300">White-label options available.</span>
-                        </div>
-                        <div class="flex items-center">
-                            <svg class="h-5 w-5 text-emerald-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <span class="text-slate-300">Recurring revenue share on maintenance plans.</span>
-                        </div>
+                <div class="mt-10 section-card-soft p-8">
+                    <h2 class="font-display text-2xl font-bold">Why partners choose LogicCore</h2>
+                    <ul class="mt-4 space-y-3 text-slate-700">
+                        <li class="flex gap-3"><span class="bullet"></span><span>Fast turnaround for brochure and lead-generation sites.</span></li>
+                        <li class="flex gap-3"><span class="bullet"></span><span>Copy and structure tailored for trades and local service businesses.</span></li>
+                        <li class="flex gap-3"><span class="bullet"></span><span>Optional setup for branded email and virtual business numbers.</span></li>
+                        <li class="flex gap-3"><span class="bullet"></span><span>Simple handover docs so clients can run confidently after launch.</span></li>
+                    </ul>
+                    <div class="mt-6">
+                        <a href="contact.html" class="cta-primary inline-block px-6 py-3 rounded-lg font-semibold">Discuss Partnership</a>
                     </div>
-
-                    <a href="contact.html" class="inline-block px-8 py-4 bg-emerald-400 text-slate-900 font-bold rounded-lg hover:bg-emerald-500 transition-all shadow-[0_0_15px_rgba(52,211,153,0.3)]">
-                        Book a Partner Sync
-                    </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-slate-950 border-t border-slate-800 pt-12 pb-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <div class="col-span-1 md:col-span-2">
-                    <span class="text-xl font-bold font-mono text-emerald-400">&lt;LogicCore /&gt;</span>
-                    <p class="mt-4 text-slate-400 max-w-xs">
-                        Websites that work as hard as your network security. Proudly serving Wales and the UK.
-                    </p>
-                </div>
-                <div>
-                    <h4 class="text-sm font-semibold text-white uppercase tracking-wider">Company</h4>
-                    <ul class="mt-4 space-y-2">
-                        <li><a href="index.html" class="text-slate-400 hover:text-emerald-400 transition-colors">Home</a></li>
-                        <li><a href="services.html" class="text-slate-400 hover:text-emerald-400 transition-colors">Services</a></li>
-                        <li><a href="msp-partners.html" class="text-slate-400 hover:text-emerald-400 transition-colors">MSP Partners</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-sm font-semibold text-white uppercase tracking-wider">Connect</h4>
-                    <ul class="mt-4 space-y-2">
-                        <li><a href="contact.html" class="text-slate-400 hover:text-emerald-400 transition-colors">Contact Us</a></li>
-                        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-emerald-400 transition-colors">GitHub</a></li>
-                        <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-emerald-400 transition-colors">LinkedIn</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-slate-500 text-sm">&copy; 2024 LogicCore. All rights reserved.</p>
-                <p class="text-slate-600 text-xs mt-2 md:mt-0 font-mono">Hosted in the UK. Secure by Default.</p>
-            </div>
+    <footer class="footer-shell pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-slate-500">
+            <p>&copy; 2026 LogicCore. Built for local business growth.</p>
         </div>
     </footer>
-
 </body>
 </html>
