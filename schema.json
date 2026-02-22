@@ -7,7 +7,7 @@
       "name": "LogicCore",
       "url": "https://logiccore.cloud/",
       "logo": "https://logiccore.cloud/Assets/logo.png",
-      "description": "LogicCore: Beautifully Designed. Brutally Secure. Web agency for SMBs and MSPs in Wales and the UK.",
+      "description": "LogicCore builds trust-first websites for local businesses and trades, including optional business email and virtual landline setup.",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+44-33-0001-2345",
@@ -22,16 +22,18 @@
     {
       "@type": "ProfessionalService",
       "@id": "https://logiccore.cloud/#service",
-      "name": "Secure Web Design Agency",
-      "description": "Providing brutally secure and beautifully designed static websites for SMBs and MSPs.",
+      "name": "LogicCore Local Business Website Service",
+      "description": "Website design and launch packages for local service businesses, including optional branded email and virtual number setup.",
       "provider": {
         "@id": "https://logiccore.cloud/#organization"
       },
       "serviceType": [
-        "Web Design",
-        "Web Development",
-        "Cybersecurity Consulting",
-        "Managed Services Provider (MSP) Partnerships"
+        "Website Design",
+        "Local SEO",
+        "Lead Generation",
+        "Business Email Setup",
+        "Virtual Landline Setup",
+        "MSP White-Label Delivery"
       ],
       "areaServed": [
         {
